@@ -313,7 +313,7 @@ String Ocupacion[]={"Estudiante","Obrero","Ama de casa",""};
                 JComboBox datos=new JComboBox();
                 datos.setBounds(420, 8, 160, 20);
                 contentPane.add(datos);	
-                String cont[]={"Seleccione una opción", "Apellido Paterno", "Apellido Materno"/**, "Codigo postal", "Edad"**/, "Estado Civil",/**"Fecha de Nacimiento", "Fecha",**/ "Nombre", "Ocupación"/**, "Telefono"**/};
+                String cont[]={"Seleccione una opción", "Apellido Paterno", "Apellido Materno"/**, "Codigo postal", "Edad"**/, "Estado Civil",/**"Fecha de Nacimiento", "Fecha", "Nombre", "Ocupación"/**, "Telefono"**/};
                 for(int i=0;i<cont.length;i++){
                 datos.addItem(cont[i]);
                 }
