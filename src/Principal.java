@@ -471,6 +471,9 @@ String Ocupacion[]={"Estudiante","Obrero","Ama de casa",""};
 		btnGuardar = new JButton("Guardar");
 		btnGuardar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+                            if(miTabla.getRowCount()!=0 && miTabla.getColumnCount()!=-1){
+                            
+                            
                             
 //                            String fila[]=new String[miTabla.getRowCount()];
 //                            String colum[]=new String[miTabla.getColumnCount()];
@@ -533,18 +536,15 @@ String con[]=new String[miTabla.getRowCount()];
         } catch (Exception ex) {
             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
+        }else{
+                            JOptionPane.showMessageDialog(null,"Esta vacia la Tabla, ingrese algunos datos");
+                            }
 			}
 		});
-		btnGuardar.setBounds(366, 256, 89, 42);
+		btnGuardar.setBounds(471, 256, 89, 42);
 		contentPane.add(btnGuardar);
 		
-		JButton btnLimpiar = new JButton("Limpiar");
-		btnLimpiar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {	
-			}
-		});
-		btnLimpiar.setBounds(471, 256, 89, 42);
-		contentPane.add(btnLimpiar);
+		
 	}
 
 	protected void enviardatosaTabla( String tipo) {
